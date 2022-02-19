@@ -1,13 +1,15 @@
 import React from 'react';
+import SvgSelector from '../SvgSelector';
 import './sideMenu.css';
 
 const SideMenu = () => {
     return (
         <div className='sideMenu inactive'>
             <div className='topSection' >
-                {/* <img>
-                    
-                </img> */}
+                <SvgSelector 
+                    id='award'
+                    fill='#1F4EC7'
+                />
             </div>
             <div className='middleSection'>
                 <button className='menuButton'>
