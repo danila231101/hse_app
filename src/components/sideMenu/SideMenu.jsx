@@ -4,16 +4,19 @@ import './sideMenu.css';
 
 const SideMenu = () => {
     return (
-        <div className='sideMenu inactive'>
+        <div className='sideMenu'>
             <div className='topSection' >
-                <SvgSelector 
-                    id='award'
-                    fill='#1F4EC7'
-                />
+                
             </div>
             <div className='middleSection'>
                 <button className='menuButton'>
-                    Schedule
+                    <SvgSelector 
+                    id='award'
+                    fill='#1F4EC7'
+                    />
+                    <text>
+                        Schedule 
+                    </text>
                 </button>
                 <button className='menuButton'>
                     Courses
