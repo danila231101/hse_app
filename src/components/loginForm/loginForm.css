@@ -1,0 +1,130 @@
+.loginCard {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px 32px 28px;
+
+    position: static;
+    width: 80vw;
+    height: 512px;
+    max-width: 480px;
+
+    background: #FFFFFF;
+    border-radius: 16px;
+
+    position: absolute;
+    top: 40vh;
+    left: 50%;
+    transform: translate(-50%, -30vh);
+    box-shadow: 0px 24px 36px #00000012
+}
+
+.header {
+    font-size: 28px;
+    text-align: center;
+    color: #1F4EC7;
+    font-weight: 700;
+    width: 100%;
+}
+
+.emailInput {
+    margin: 16px 0px 0px 0px;
+    display: inline-block;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 16px;
+    background-color: #F5F5F5;
+    box-sizing: border-box;
+
+    position: static;
+    width: 100%;
+    height: 48px;
+
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+}
+
+.emailInput:focus {
+    outline: none;
+}
+
+.passwordInput {
+    margin: 16px 0px 0px 0px;
+    display: inline-block;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 16px;
+    background-color: #F5F5F5;
+    box-sizing: border-box;
+
+    position: static;
+    width: 100%;
+    height: 48px;
+
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+}
+
+.passwordInput:focus {
+    outline: none;
+}
+
+.primaryButton {
+    margin: 40px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 16px;
+    background: #1F4EC7;
+    border-radius: 8px;
+
+    position: static;
+    width: 100%;
+    height: 48px;
+
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    transition: .2s ease-in-out 0s;
+}
+
+.primaryButton:hover {
+    opacity: 0.9;
+    transform: scale(0.99);
+    cursor: pointer;
+}
+
+.tertiaryButton {
+    margin: 40px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 16px;
+    background: none;
+    border-radius: 8px;
+
+    position: static;
+    width: 100%;
+    height: 48px;
+
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #1F4EC7;
+    transition: .2s ease-in-out 0s;
+}
+
+.tertiaryButton:hover {
+    opacity: 0.9;
+    transform: scale(0.99);
+    cursor: pointer;
+}
