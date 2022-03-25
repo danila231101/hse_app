@@ -1,10 +1,12 @@
 import React from 'react';
-import SideMenu from '../../components/sideMenu/SideMenu';
+import Sidebar from '../../components/UI/sideMenu/Sidebar';
 
-const Shedule = () => {
+const Schedule = () => {
     return (
-        <SideMenu/>
+        <h1>
+            SCHEDULE
+        </h1>
     );
 };
 
-export default Shedule;
+export default Schedule;

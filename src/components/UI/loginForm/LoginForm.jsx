@@ -8,15 +8,28 @@ const LogInForm = () => {
                 HSE Connect
             </text>
 
+            <div className='segmentedControl'>
+                <button className='selectorButton'> 
+                    Student
+                </button>
+                <button className='selectorButton'> 
+                    Assistant
+                </button>
+                <button className='selectorButton'> 
+                    Professor
+                </button>
+            </div>
+
             <input 
-                type='text' 
-                placeholder='Email' 
                 className='emailInput'
+                type='email' 
+                placeholder='Email' 
             />
 
             <input 
-                type='text'
-                placeholder='Password' className='passwordInput'
+                className='emailInput'
+                type='password'
+                placeholder='Password'
             />
 
             <button className='primaryButton'>

@@ -1,11 +1,12 @@
 import React from 'react';
+import Sidebar from '../../components/UI/sideMenu/Sidebar';
 
-const Gardes = () => {
+const Grades = () => {
     return (
-        <div>
-            
-        </div>
+        <h1>
+           GRADES
+        </h1>
     );
 };
 
-export default Gardes;
+export default Grades;

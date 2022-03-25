@@ -1,10 +1,11 @@
 import React from 'react';
+import Sidebar from '../../components/UI/sideMenu/Sidebar';
 
 const Settings = () => {
     return (
-        <div>
-            
-        </div>
+        <h1>
+                SETTINGS
+        </h1>
     );
 };
 
