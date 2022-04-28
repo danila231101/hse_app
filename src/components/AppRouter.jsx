@@ -1,26 +1,30 @@
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import Courses from '../pages/courses/Courses';
 import Error from '../pages/error/Error';
-import Grades from '../pages/grades/Grades';
-import Schedule from '../pages/schedule/Schedule';
-import Settings from '../pages/settings/Settings';
 import Login from '../pages/login/Login';
+import Schedule from '../pages/schedule/Schedule';
+import Grades from '../pages/grades/Grades';
+import Settings from '../pages/settings/Settings';
 import Sidebar from './UI/sideMenu/Sidebar';
 
-const AppRouter = () => {
-    return (
-        <div className='container'>
+const AppRouter = (isAuthenficated) => {
+    if (isAuthenficated) {
+        return (
             <Routes>
-                <Route path='/login' element={<Login/>}/>
                 <Route path='/schedule' element={<Schedule/>}/>
                 <Route path='/courses' element={<Courses/>}/>
                 <Route path='/grades' element={<Grades/>}/>
                 <Route path='/settings' element={<Settings/>}/>
-                <Route path='/test' element={<Sidebar/>}/>
-                <Route path='*' element={<Error/>}/>
+                <Route path='*' element={<Navigate to="/schedule" replace />}/>
             </Routes>
-        </div>
+    );
+    }
+    return (
+        <Routes>
+            <Route path='/' element={<Login/>}/>
+            <Route path='*' element={<Navigate to="/" replace />}/>
+        </Routes>
     );
 };
 
