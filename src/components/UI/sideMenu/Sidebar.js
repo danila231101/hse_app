@@ -18,12 +18,8 @@ const Sidebar = () => {
 
                         </div>
                         <div className='stack'>
-                            <text id='name'> 
-                                Danila Kokin
-                            </text>
-                            <text id='status'>
-                                student
-                            </text>
+                            <text id='name'>Danila Kokin</text>
+                            <text id='status'>student</text>
                         </div>
                         <div id='toggle-btn'>
                             <IconArrow
@@ -42,12 +38,8 @@ const Sidebar = () => {
                                 <div 
                                     className='container' 
                                     id={window.location.pathname === val.path ? 'active' : ''}>
-                                    <div id='icon'>
-                                        {val.icon}
-                                    </div>
-                                    <div id='title'>
-                                        {val.title}
-                                    </div>
+                                    <div id='icon'>{val.icon}</div>
+                                    <div id='title'>{val.title}</div>
                                 </div>
                             </li>
                         );
@@ -63,12 +55,8 @@ const Sidebar = () => {
                                 <div 
                                     className='container'
                                     id={window.location.pathname === val.path ? 'active' : ''}>
-                                    <div id='icon'>
-                                        {val.icon}
-                                    </div>
-                                    <div id='title'>
-                                        {val.title}
-                                    </div>
+                                    <div id='icon'>{val.icon}</div>
+                                    <div id='title'>{val.title}</div>
                                 </div>
                             </li>
                         );
