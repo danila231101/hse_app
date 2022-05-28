@@ -1,7 +1,5 @@
 import React from 'react';
-import { useState } from 'react/cjs/react.production.min';
-import './loginForm.css'
-import { useHttp } from '../../../hooks/http.hooks';
+import './loginForm.css';
 
 const LogInForm = () => {
     // const {loading, request} = useHttp()
@@ -44,7 +42,7 @@ const LogInForm = () => {
             />
             <button 
                 className='primaryButton'
-                // onClick={}
+                onClick={() => {window.location.pathname = 'main'}}
                 // disabled={loading}
             >
                 Log in

@@ -1,12 +1,10 @@
 .event__content { 
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
+    display: grid;
+    grid-template-columns: max-content max-content 1fr;
+    grid-gap: 12px;
 
     width: 100%;
-    height: 120px;
-    margin-bottom: 24px;
+    height: max-content;
 }
 
 .content__left {
@@ -14,9 +12,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 0px;
 
-    position: static;
     width: 46px;
     height: 100%;
 }
@@ -30,41 +26,35 @@
 }
 
 .content__indicator {
-    width: 0px;
     height: 100%;
-    border: 1px solid var(--accent);
+    border: 1px solid var(--bgAccent);
     border-radius: 1px;
-    box-sizing: border-box;
-    margin: 0px 12px 0px 8px;
+    flex-direction: column;
 }
 
 .content__right {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
     box-sizing: border-box;
-    margin: 0px;
+    gap: 8px;
 }
 
 .event__type {
     color: var(--accent);
-    flex: none;
-    margin-bottom: 8px;
+    /* flex: none; */
 }
 
 .event__title {
     color: var(--primary);
-    flex: none;
-    margin-bottom: 8px;
+    /* flex: none; */
 }
 
 .event__presenter {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0px;
-    margin-bottom: 8px;
+    gap: 4px;
 }
 
 .presenter__photo {
@@ -76,10 +66,9 @@
 
 .presenter__name {
     color: var(--primary);
-    margin-left: 4px;
+    /* margin-left: 4px; */
 }
 
 .event__meeting {
     color: var(--secondary);
-    margin-bottom: 8px;
 }

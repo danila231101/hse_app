@@ -1,11 +1,14 @@
 import React from 'react';
-import Sidebar from '../../components/UI/sideMenu/Sidebar';
+import { Outlet } from 'react-router-dom';
 
 const Settings = () => {
     return (
+        <>
         <h1>
-                SETTINGS
+            SETTINGS
         </h1>
+        <Outlet/>
+        </>
     );
 };
 

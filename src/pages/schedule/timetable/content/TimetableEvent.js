@@ -1,8 +1,8 @@
 import React from 'react';
 // import {ReactComponent as IconRecording} from './recording.svg';
-import './event.css'
+import './timetableEvent.css'
 
-const Event = () => {
+const TimetableEvent = () => {
     return (
         <div className='event__content'>
             <div className='content__left'>
@@ -35,4 +35,4 @@ const Event = () => {
     );
 };
 
-export default Event;
+export default TimetableEvent;

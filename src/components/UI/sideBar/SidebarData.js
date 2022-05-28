@@ -8,19 +8,19 @@ import { ReactComponent as IconSettings } from './icons/settings.svg';
 export const SidebarMiddleData = [
     {
         title: 'Schedule',
-        path: '/schedule',
+        path: 'schedule',
         icon: <IconCalendar/>,
         cName: 'nav-text'
     },
     {
         title: 'Courses',
-        path: '/courses',
+        path: 'courses',
         icon: <IconServer/>,
         cName: 'nav-text'
     },
     {
         title: 'Grades',
-        path: '/grades',
+        path: 'grades',
         icon: <IconAward/> ,
         cName: 'nav-text'
     }
@@ -29,13 +29,13 @@ export const SidebarMiddleData = [
 export const SidebarBottomData = [
     {
         title: 'Log out',
-        path: '/login',
+        path: 'login',
         icon: <IconArrow />,
         cName: 'nav-text'
     },
     {
         title: 'Settings',
-        path: '/settings',
+        path: 'settings',
         icon: <IconSettings />,
         cName: 'nav-text'
     }

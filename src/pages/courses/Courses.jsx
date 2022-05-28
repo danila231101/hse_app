@@ -1,5 +1,4 @@
 import React from 'react';
-import Sidebar from '../../components/UI/sideMenu/Sidebar';
 
 const Courses = () => {
     return (

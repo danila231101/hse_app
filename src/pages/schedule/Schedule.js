@@ -1,21 +1,26 @@
 import React from 'react';
-import Event from './assignments/Event';
+import { Link, Outlet } from 'react-router-dom';
 import './schedule.css';
-import DaySection from './assignments/DaySection';
 
 const Schedule = () => {
     return (
-        <div className='body'>
+        <>
             <nav className='navbar'>
-                <a className='headline' id='active'> Assignments</a>
-                <a className='headline' id='inactive'> Deadlines</a>
+                <Link to='timetable' className='headline__button'>
+                    <h1 id='active'>
+                        Timetable
+                    </h1>
+                </Link>
+                <Link to='assignments' className='headline__button'>
+                    <h1 id='inactive'>
+                        Assignments
+                    </h1>
+                </Link>
             </nav>
-            <body className='scroll'>
-                <DaySection/>
-                <DaySection/>
-                <DaySection/>
-            </body>
-        </div>
+            <div className='scroll'>
+                <Outlet />
+            </div>
+        </>
     );
 };
 

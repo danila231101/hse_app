@@ -1,11 +1,14 @@
 import React from 'react';
-import Sidebar from '../../components/UI/sideMenu/Sidebar';
+import { Outlet } from 'react-router-dom';
 
 const Grades = () => {
     return (
-        <h1>
-           GRADES
-        </h1>
+        <>
+            <h1>
+                GRADES
+            </h1>
+            <Outlet/>
+        </>
     );
 };
 

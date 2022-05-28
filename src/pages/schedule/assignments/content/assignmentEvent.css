@@ -1,0 +1,18 @@
+.rows {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.beige {
+    padding: 4px 8px;
+    display: flex;
+    align-items: center;
+    background-color: var(--outlineStrong);
+    border-radius: 4px;
+    list-style: none;
+}
+
+.subject {
+    color: var(--accent);
+}
