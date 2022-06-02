@@ -1,0 +1,27 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    width: 100%;
+    border-radius: 12px;
+    background-color: var(--bgAccent);
+    min-width: max-content;
+    max-width: 296px;
+}
+
+.item {
+    display: flex;
+    width: 100%;
+    height: 48px;
+    padding: 0px 16px;
+    border-radius: 8px;
+    align-items: center;
+    box-sizing: border-box;
+    color: var(--secondary);
+}
+
+.item:hover {
+    background-color: var(--accentFiller);
+    color: var(--accent);
+}

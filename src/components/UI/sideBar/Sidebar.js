@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './sidebar.css';
 import { SidebarBottomData, SidebarMiddleData } from './SidebarData';
 
@@ -14,38 +14,36 @@ const Sidebar = () => {
                 <ul className='middle-section'>
                     {SidebarMiddleData.map((val, key) => {
                         return (
-                            <Link
+                            <NavLink
                                 key={key}
-                                className='row'
+                                className={({ isActive }) => isActive ? 'row_active' : 'row' }
                                 to={val.path}
                                 >
                                     <div
                                         className='container'
-                                        id={window.location.pathname === val.path ? 'active' : ''}
                                         >
                                             <div id='icon'>{val.icon}</div>
                                             <div id='title'>{val.title}</div>
                                     </div>
-                            </Link>
+                            </NavLink>
                         )
                     })}
                 </ul>
                 <ul className='bottom-section'>
                     {SidebarBottomData.map((val, key) => {
                         return (
-                            <Link
+                            <NavLink
                                 key={key}
-                                className='row'
+                                className={({ isActive }) => isActive ? 'row_active' : 'row' }
                                 to={val.path}
                                 >
                                     <div
                                         className='container'
-                                        // id={window.location.pathname === val.path ? 'active' : ''}
                                         >
                                             <div id='icon'>{val.icon}</div>
                                             <div id='title'>{val.title}</div>
                                     </div>
-                            </Link>
+                            </NavLink>
                         )
                     })}
                 </ul>

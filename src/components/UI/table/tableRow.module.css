@@ -1,0 +1,44 @@
+.cell {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+.cell:hover {
+    background-color: var(--outlineStrong);
+    border-radius: 2px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 36px;
+}
+
+.smallText {
+    width: 12.5%;
+    padding: 12px;
+    align-items: center;
+    padding-left: 12px;
+}
+
+.mediumText {
+    width: 25%;
+    padding: 12px;
+    align-items: center;
+    padding-left: 12px;
+}
+
+.vseparator {
+    height: 100%;
+    width: 2px;
+    background-color: var(--outlineStrong);
+}
+
+.hseparator {
+    height: 2px;
+    width: 100%;
+    background-color: var(--outlineStrong);
+}

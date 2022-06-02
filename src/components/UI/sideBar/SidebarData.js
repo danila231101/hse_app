@@ -1,9 +1,8 @@
-import { ReactComponent as IconArrow } from './icons/arrow-right.svg';
-import { ReactComponent as IconAward } from './icons/award.svg';
-import { ReactComponent as IconCalendar } from './icons/calendar.svg';
-import { ReactComponent as IconServer } from './icons/server.svg';
-import { ReactComponent as IconSettings } from './icons/settings.svg';
-
+import { ReactComponent as IconArrow } from '../../../assets/icons/arrow-right.svg';
+import { ReactComponent as IconAward } from '../../../assets/icons/award.svg';
+import { ReactComponent as IconCalendar } from '../../../assets/icons/calendar.svg';
+import { ReactComponent as IconServer } from '../../../assets/icons/server.svg';
+import { ReactComponent as IconSettings } from '../../../assets/icons/settings.svg';
 
 export const SidebarMiddleData = [
     {

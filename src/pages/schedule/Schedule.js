@@ -1,21 +1,17 @@
 import React from 'react';
-import { Link, Outlet } from 'react-router-dom';
+import { Link, Outlet, NavLink } from 'react-router-dom';
 import './schedule.css';
 
 const Schedule = () => {
     return (
         <>
             <nav className='navbar'>
-                <Link to='timetable' className='headline__button'>
-                    <h1 id='active'>
+                <NavLink to='timetable' className={({ isActive }) => isActive ? 'headline__active' : 'headline'}>
                         Timetable
-                    </h1>
-                </Link>
-                <Link to='assignments' className='headline__button'>
-                    <h1 id='inactive'>
+                </NavLink>
+                <NavLink to='assignments' className={({ isActive }) => isActive ? 'headline__active' : 'headline'}>
                         Assignments
-                    </h1>
-                </Link>
+                </NavLink>
             </nav>
             <div className='scroll'>
                 <Outlet />

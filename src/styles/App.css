@@ -46,7 +46,7 @@ button:hover {
     background-color: var(--accentFiller);
 }
 
-/* .page {
+.page {
     display: flex;
     flex-direction: row;
-} */
+}

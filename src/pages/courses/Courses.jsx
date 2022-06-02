@@ -1,10 +1,13 @@
 import React from 'react';
+import TableRow from '../../components/UI/table/TableRow';
 
 const Courses = () => {
     return (
-        <h1>
-            COURSES
-        </h1>
+        <>
+            <h1>
+                Hi, pidor
+            </h1>
+        </>
     );
 };
 

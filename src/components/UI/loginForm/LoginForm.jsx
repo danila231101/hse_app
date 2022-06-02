@@ -42,7 +42,7 @@ const LogInForm = () => {
             />
             <button 
                 className='primaryButton'
-                onClick={() => {window.location.pathname = 'main'}}
+                onClick={() => {window.location.pathname = '/'}}
                 // disabled={loading}
             >
                 Log in

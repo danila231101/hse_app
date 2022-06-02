@@ -1,17 +1,17 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import Sidebar from './components/UI/sideBar/Sidebar';
-import './main.css';
+import styles from './main.module.css';
+import Sidebar from '../components/UI/sideBar/Sidebar';
 
 const Main = () => {
     return (
-        <div className='page'>
+        <div className={styles.page}>
             <Sidebar />
-            <main className='main'>
+            <main className={styles.main}>
                 <Outlet />
             </main>
         </div>
     );
-};
+}
 
 export default Main;
