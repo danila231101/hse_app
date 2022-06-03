@@ -7,7 +7,8 @@ import Main from '../pages/Main';
 import Assignments from '../pages/schedule/assignments/Assignments';
 import Schedule from '../pages/schedule/Schedule';
 import Timetable from '../pages/schedule/timetable/Timetable';
-import Settings from '../pages/settings/Settings';
+import Account from '../pages/account/Account';
+import Settings from '../pages/account/Account';
 
 const AppRouter = () => {
     return (
@@ -17,12 +18,12 @@ const AppRouter = () => {
                 <Route path='/schedule' element={<Schedule />} >
                     <Route path='timetable' element={<Timetable />} /> 
                     <Route path='assignments' element={<Assignments />} />
-                    {/* <Route index path='timetable' element={<Timetable />} /> */}
+                    <Route index element={<Timetable />} />
                 </Route>
                 <Route path='courses' element={<Courses />} />
                 <Route path='grades' element={<Grades/>}/>
-                <Route path='settings' element={<Settings/>}/>
-                <Route index path='schedule' element={<Schedule />} />
+                <Route path='account' element={<Account />}/>
+                <Route index element={<Schedule />} />
             </Route>
         </Routes>
     );

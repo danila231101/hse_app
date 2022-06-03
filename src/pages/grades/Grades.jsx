@@ -6,7 +6,7 @@ import styles from './grades.module.css';
 
 const Grades = () => {
     return (
-        <>
+        <div className={styles.page}>
             <nav className={styles.navbar}>
                 <h1>Grades</h1>
             </nav>
@@ -19,7 +19,7 @@ const Grades = () => {
                     <SubjectMenu />
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 

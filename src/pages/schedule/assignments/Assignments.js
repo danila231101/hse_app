@@ -12,11 +12,10 @@ const Assignments = () => {
                 <AssignmentDailySection />
                 <AssignmentDailySection /> 
             </div>
-            <div className='right--menu'>
+            {/* <div className='right--menu'>
                 <Calendar className='calendar'
-                
                 />
-            </div>
+            </div> */}
         </>
     );
 };

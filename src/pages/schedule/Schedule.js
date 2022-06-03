@@ -1,8 +1,9 @@
 import React from 'react';
-import { Link, Outlet, NavLink } from 'react-router-dom';
+import { NavLink, Outlet } from 'react-router-dom';
 import './schedule.css';
 
 const Schedule = () => {
+
     return (
         <>
             <nav className='navbar'>
@@ -13,6 +14,7 @@ const Schedule = () => {
                         Assignments
                 </NavLink>
             </nav>
+
             <div className='scroll'>
                 <Outlet />
             </div>

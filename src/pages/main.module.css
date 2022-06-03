@@ -1,9 +1,12 @@
 .page {
     display: flex;
     flex-direction: row;
+    box-sizing: border-box;
+    height: 100vh;
 }
 
 .main {
+    /* display: flex; */
     height: 100%;
     width: 100%;
 }

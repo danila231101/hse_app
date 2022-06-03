@@ -9,7 +9,6 @@ const Login = () => {
             <div className='loginPage'>
                 <LoginForm/>
             </div>
-            {/* <Outlet/> */}
         </>
     );
 };

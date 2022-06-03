@@ -1,0 +1,112 @@
+.sideBarWide {
+    height: 100vh;
+    /* max-height: stretch ; */
+    /* overflow: hidden; */
+    width: 30vh;
+    background-color: var(--bgAccent);
+    padding: 16px 16px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.sideBarNarrow {
+    height: 100vh;
+    /* max-height: stretch ; */
+    /* overflow: hidden; */
+    width: auto;
+    background-color: var(--bgAccent);
+    padding: 16px 16px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.middleSection {
+    flex-direction: column;
+    color: var(--secondary);
+}
+
+.bottomSection {
+    flex-direction: column;
+    color: var(--secondary);
+}
+
+.blueButton {
+    height: 48px;
+    width: 100%;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: var(--secondary);
+    background-color: var(--outlineStrong);
+}
+
+.blueButtonActive {
+    color: var(--accent);
+    background-color: var(--accentFiller);
+    text-decoration: none;
+}
+
+.redButton {
+    height: 48px;
+    width: 100%;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: var(--warning);
+    background-color: var(--warningFiller);
+}
+
+.blueContainer { 
+    width: 100%;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 8px;
+    padding: 0px;
+    color: inherit;
+    gap: 16px;
+}
+
+.blueContainer:hover {
+    background-color: inherit;
+}
+
+.redContainer { 
+    width: 100%;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 8px;
+    padding: 0px;
+    color: inherit;
+    gap: 16px;
+}
+
+.redContainer:hover {
+    color: inherit;
+    background-color: inherit;
+}
+
+#icon {
+    width: 48px;
+    height: 48px;
+    display: grid;
+    place-items: center;
+    align-items: center;
+    color: inherit;
+}
+
+#title {
+    flex: 70%;
+    text-decoration: none;
+    display: grid;
+    place-items: left;
+    align-items: center;
+    color: inherit;
+}

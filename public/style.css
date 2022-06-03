@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    /* height: -webkit-fill-available; */
     font-family: 'Inter', sans-serif;
     font-weight: 500;
 
@@ -15,6 +16,8 @@
     --accent: #1F4EC7;
     --accentFiller: #1F4EC715;
     --onAccent: #ffffff;
+    --warning: #C9241A;
+    --warningFiller: #C9241A15;
     --primary: #000000;
     --secondary: #00000050;
     --tertiary: #00000030;

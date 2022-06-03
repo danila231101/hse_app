@@ -1,47 +1,46 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import './sidebar.css';
+import styles from './sidebar.module.css';
 import { SidebarBottomData, SidebarMiddleData } from './SidebarData';
+import useWindowSize from '../../../hooks/useWindowSize';
 
 const Sidebar = () => {
-
-    const [sideBar, setSideBar] = useState(true)
-    const showSideBar = () => setSideBar(!sideBar)
+    const width = useWindowSize().width
 
     return (
         <>
-            <div className='side-bar'>
-                <ul className='middle-section'>
+            <div className={width > 800 ? styles.sideBarWide : styles.sideBarNarrow}>
+                <ul className={styles.middleSection}>
                     {SidebarMiddleData.map((val, key) => {
                         return (
                             <NavLink
                                 key={key}
-                                className={({ isActive }) => isActive ? 'row_active' : 'row' }
+                                className={({ isActive }) => isActive ? val.cNameActive : val.cName }
                                 to={val.path}
                                 >
                                     <div
-                                        className='container'
+                                        className={val.cNameContainer}
                                         >
-                                            <div id='icon'>{val.icon}</div>
-                                            <div id='title'>{val.title}</div>
+                                            <div id={styles.icon}>{val.icon}</div>
+                                            { width > 800 ? <div id={styles.title}>{val.title}</div> : null }
                                     </div>
                             </NavLink>
                         )
                     })}
                 </ul>
-                <ul className='bottom-section'>
+                <ul className={styles.bottomSection}>
                     {SidebarBottomData.map((val, key) => {
                         return (
                             <NavLink
                                 key={key}
-                                className={({ isActive }) => isActive ? 'row_active' : 'row' }
+                                className={({ isActive }) => isActive ? val.cNameActive : val.cName }
                                 to={val.path}
                                 >
                                     <div
-                                        className='container'
+                                        className={val.cNameContainer}
                                         >
-                                            <div id='icon'>{val.icon}</div>
-                                            <div id='title'>{val.title}</div>
+                                            <div id={styles.icon}>{val.icon}</div>
+                                            { width > 800 ? <div id={styles.title}>{val.title}</div> : null }
                                     </div>
                             </NavLink>
                         )
