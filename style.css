@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* height: -webkit-fill-available; */
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+
+    --headline: 700;
+    --title: 700;
+    --body: 500;
+    --footnote: 400;
+    --caption: 500;
+
+    --bgAccent: #f5f5f5;
+    --bgDefault: #ffffff;
+    --accent: #1F4EC7;
+    --accentFiller: #1F4EC715;
+    --onAccent: #ffffff;
+    --warning: #C9241A;
+    --warningFiller: #C9241A15;
+    --primary: #000000;
+    --secondary: #00000050;
+    --tertiary: #00000030;
+    --outlineStrong: #00000008;
+    --outlineLight: #00000004;
+}
+

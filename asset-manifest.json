@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/hse_app/static/css/main.581dd7af.css",
+    "main.js": "/hse_app/static/js/main.bcdb86e7.js",
+    "static/media/notion-avatar-1654242914584.png": "/hse_app/static/media/notion-avatar-1654242914584.1abf2671040efcf8fb43.png",
+    "static/media/settings.svg": "/hse_app/static/media/settings.46447f8f4810749a39266d38d8815c46.svg",
+    "static/media/award.svg": "/hse_app/static/media/award.e9624ab94201c54038ecdf7a1c5214b7.svg",
+    "static/media/server.svg": "/hse_app/static/media/server.89d0bf8529669d8ea7907d391eda799a.svg",
+    "static/media/calendar.svg": "/hse_app/static/media/calendar.b6bd019f7f2327236b04ffe515546528.svg",
+    "index.html": "/hse_app/index.html",
+    "static/media/smartphone.svg": "/hse_app/static/media/smartphone.347237947587c1dc29c94783c390b598.svg",
+    "static/media/monitor.svg": "/hse_app/static/media/monitor.cc8c7185bccc402809c39f06cb8a5468.svg",
+    "static/media/arrow-right.svg": "/hse_app/static/media/arrow-right.4cb62b0b20f6b2bb02946b2a246abaae.svg",
+    "main.581dd7af.css.map": "/hse_app/static/css/main.581dd7af.css.map",
+    "main.bcdb86e7.js.map": "/hse_app/static/js/main.bcdb86e7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.581dd7af.css",
+    "static/js/main.bcdb86e7.js"
+  ]
+}
