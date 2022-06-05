@@ -16,7 +16,7 @@ const Assignments = () => {
                 <AssignmentDaySection />
                 <AssignmentDaySection /> 
             </div>
-            {width > 800 ? <div className={styles.rightMenu}>
+            {width > 1024 ? <div className={styles.rightMenu}>
                 <Calendar
                     className='calendar'
                 />
