@@ -1,8 +1,10 @@
 import React from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
 import styles from './schedule.module.css';
+import useWindowSize from '../../hooks/useWindowSize';
 
 const Schedule = () => {
+    const width = useWindowSize().width
 
     return (
         <>
@@ -15,7 +17,7 @@ const Schedule = () => {
                 </NavLink>
             </nav>
 
-            <div className={styles.content}>
+            <div className={width > 1024 ? styles.scrollWide : styles.scrollNarrow}>
                 <Outlet />
             </div>
         </>

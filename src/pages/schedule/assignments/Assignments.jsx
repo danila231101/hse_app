@@ -18,7 +18,7 @@ const Assignments = () => {
             </div>
             {width > 1024 ? <div className={styles.rightMenu}>
                 <Calendar
-                    className='calendar'
+                    className={styles.calendar}
                 />
             </div> : null}
         </>

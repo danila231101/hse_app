@@ -13,7 +13,6 @@
 .info {
     display: flex;
     flex-direction: column;
-    height: 100%;
     gap: 24px;
 
 }
@@ -44,6 +43,6 @@
 .infoSection {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: auto;
     gap: 12px;
 }

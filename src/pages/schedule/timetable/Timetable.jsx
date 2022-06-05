@@ -9,7 +9,7 @@ const Timetable = () => {
 
     return (
         <>
-            <div className={styles.scroll}>
+            <div className={styles.content}>
                 <TimetableDaySection />
                 <TimetableDaySection />
                 <TimetableDaySection />
@@ -19,7 +19,7 @@ const Timetable = () => {
 
             {width > 1024 ? <div className={styles.rightMenu}>
                 <Calendar
-                    className='calendar'
+                    className={styles.calendar}
                 />
             </div> : null}
         </>

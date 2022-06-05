@@ -3,6 +3,7 @@
     flex-direction: row;
     box-sizing: border-box;
 
+    height: 8vh;
     width: 100%;
 
     padding: 3.3vw 4vw 2vw;
@@ -12,8 +13,8 @@
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    width: 100%;
     gap: 24px;
+    height: max-content;
 }
 
 .scrollWide {
@@ -22,7 +23,7 @@
     box-sizing: border-box;
     overflow: scroll;
 
-    height: 90vh;
+    height: 92vh;
     width: 100%;
     
     overflow: scroll;
@@ -42,7 +43,7 @@
     width: 100%;
     
     overflow: scroll;
-    padding: 0 4vw;
+    padding: 0 4vw 6vw 4vw;
     
     gap: 24px;
     box-sizing: border-box;

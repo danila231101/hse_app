@@ -17,6 +17,14 @@
     outline: none;
 }
 
+.select::-ms-expand {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 2px 30px 2px 2px;
+    border: none;
+}
+
 .option:hover, .option:focus, .option:active {
     background: var(--bgAccent);
     background-color: var(--accentFiller)!important;

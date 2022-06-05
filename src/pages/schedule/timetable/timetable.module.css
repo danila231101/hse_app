@@ -1,27 +1,24 @@
 .content {
     display: flex;
     flex-direction: column;
-    gap: 48px;
-}
-
-.scroll {
-    display: flex;
-    flex-direction: column;
     box-sizing: border-box;
-    overflow: scroll;
-
-    height: 90vh;
     width: 100%;
-    
-    overflow: scroll;
-    
     gap: 24px;
-    box-sizing: border-box;
-    /* padding: 4vw 0vw; */
+    height: max-content;
+    padding-bottom: 8vw;
 }
 
 .rightMenu {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
+    position: sticky;
+    top: 0;
+}
+
+.calendar {
+    background-color: var(--bgAccent);
+    border-radius: 12px;
+    border: none;
+    padding: 16px;
 }

@@ -6,7 +6,6 @@ import { AccountInfo } from './AccountData';
 import styles from './account.module.css';
 
 const Account = () => {
-
     return (
         <>
             <div className={styles.scroll}>

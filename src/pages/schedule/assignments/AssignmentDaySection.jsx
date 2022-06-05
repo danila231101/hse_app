@@ -9,6 +9,10 @@ const AssignmentDailySection = () => {
                 MONDAY, JANUARY 10
             </h3>
             <AssignmentUnit />
+            <AssignmentUnit />
+            <AssignmentUnit />
+            <AssignmentUnit />
+            <AssignmentUnit />
         </div>
     );
 };
