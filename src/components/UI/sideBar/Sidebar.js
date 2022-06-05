@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { NavLink } from 'react-router-dom';
+import useWindowSize from '../../../hooks/useWindowSize';
+import { AccountInfo } from '../../../pages/account/AccountData';
 import styles from './sidebar.module.css';
 import { SidebarBottomData, SidebarMiddleData } from './SidebarData';
-import useWindowSize from '../../../hooks/useWindowSize';
 
 const Sidebar = () => {
     const width = useWindowSize().width
@@ -10,6 +11,16 @@ const Sidebar = () => {
     return (
         <>
             <div className={width > 800 ? styles.sideBarWide : styles.sideBarNarrow}>
+                {/* <ul className={styles.topSection}>
+                    <div className={styles.account}>
+                        <div className={styles.photo} />
+                        { width > 800 ? <div className={styles.accountInfo}>
+                            <h3> {AccountInfo.name} {AccountInfo.surname} </h3>
+                            <h5> {AccountInfo.type} </h5>
+                        </div> : null }
+                    </div>
+                </ul> */}
+
                 <ul className={styles.middleSection}>
                     {SidebarMiddleData.map((val, key) => {
                         return (
@@ -18,12 +29,8 @@ const Sidebar = () => {
                                 className={({ isActive }) => isActive ? val.cNameActive : val.cName }
                                 to={val.path}
                                 >
-                                    <div
-                                        className={val.cNameContainer}
-                                        >
-                                            <div id={styles.icon}>{val.icon}</div>
-                                            { width > 800 ? <div id={styles.title}>{val.title}</div> : null }
-                                    </div>
+                                    {val.icon}
+                                    { width > 800 ? <div className={styles.title}>{val.title}</div> : null }
                             </NavLink>
                         )
                     })}
@@ -36,12 +43,8 @@ const Sidebar = () => {
                                 className={({ isActive }) => isActive ? val.cNameActive : val.cName }
                                 to={val.path}
                                 >
-                                    <div
-                                        className={val.cNameContainer}
-                                        >
-                                            <div id={styles.icon}>{val.icon}</div>
-                                            { width > 800 ? <div id={styles.title}>{val.title}</div> : null }
-                                    </div>
+                                    {val.icon}
+                                    { width > 800 ? <div className={styles.title}>{val.title}</div> : null }
                             </NavLink>
                         )
                     })}

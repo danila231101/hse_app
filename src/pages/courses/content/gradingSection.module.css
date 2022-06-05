@@ -1,0 +1,27 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    gap: 16px;
+}
+
+.title {
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    padding: 8px 0;
+
+    background-color: var(--bgDefault);
+}
+
+.formula {
+    padding: 12px;
+    border-radius: 12px;
+    background-color: var(--bgAccent);
+}
+
+.formulaText {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+    line-height: 150%;
+}

@@ -16,25 +16,25 @@ export const SidebarMiddleData = [
         title: 'Schedule',
         path: 'schedule',
         icon: <IconCalendar/>,
-        cName: styles.blueButton,
-        cNameActive: styles.blueButtonActive,
-        cNameContainer: styles.blueContainer
+        cName: styles.defaultButton,
+        cNameActive: styles.defaultButtonActive,
+        // cNameContainer: styles.blueContainer
     },
     {
         title: 'Courses',
         path: 'courses',
         icon: <IconServer/>,
-        cName: styles.blueButton,
-        cNameActive: styles.blueButtonActive,
-        cNameContainer: styles.blueContainer
+        cName: styles.defaultButton,
+        cNameActive: styles.defaultButtonActive,
+        // cNameContainer: styles.blueContainer
     },
     {
         title: 'Grades',
         path: 'grades',
         icon: <IconAward/> ,
-        cName: styles.blueButton,
-        cNameActive: styles.blueButtonActive,
-        cNameContainer: styles.blueContainer
+        cName: styles.defaultButton,
+        cNameActive: styles.defaultButtonActive,
+        // cNameContainer: styles.blueContainer
     }
 ]
 
@@ -45,14 +45,14 @@ export const SidebarBottomData = [
         icon: <IconArrow />,
         cName: styles.redButton,
         cNameActive: styles.redButton,
-        cNameContainer: styles.redContainer
+        // cNameContainer: styles.redContainer
     },
     {
         title: 'Account',
         path: 'account',
         icon: <IconSettings />,
-        cName: styles.blueButton,
-        cNameActive: styles.blueButtonActive,
-        cNameContainer: styles.blueContainer
+        cName: styles.defaultButton,
+        cNameActive: styles.defaultButtonActive,
+        // cNameContainer: styles.blueContainer
     }
 ]

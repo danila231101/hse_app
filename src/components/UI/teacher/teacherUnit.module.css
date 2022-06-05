@@ -1,0 +1,36 @@
+.cell {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px;
+    gap: 8px;
+
+    height: 60px;
+    border-radius: 12px;
+    border: 2px solid var(--outlineStrong);
+
+    order: 5;
+    flex-grow: 1;
+    flex-shrink: 1;
+    align-self: flex-start;
+}
+
+.cell:hover {
+    background-color: var(--outlineLight);
+}
+
+.photo {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: bisque;
+}
+
+.info {
+    flex-direction: column;
+    gap: 4;
+    flex-wrap: nowrap;
+}

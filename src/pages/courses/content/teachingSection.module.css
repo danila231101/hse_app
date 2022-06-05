@@ -1,0 +1,25 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    gap: 16px;
+}
+
+.title {
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    padding: 8px 0;
+
+    background-color: var(--bgDefault);
+}
+
+.teachers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 12px;
+}

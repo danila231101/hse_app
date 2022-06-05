@@ -1,4 +1,5 @@
 import React from 'react';
+import {ReactComponent as FileIcon } from '../../../assets/icons/file.svg';
 import styles from './tableRow.module.css';
 
 const TableRow = () => {
@@ -13,9 +14,11 @@ const TableRow = () => {
                 <div className={styles.vseparator} />  
                 <h4 className={styles.mediumText}> Anton Vlasov </h4>
                 <div className={styles.vseparator} />  
-                <div className={styles.smallText}> * </div>
+                <div className={styles.smallText}> 
+                    <FileIcon style={{color: 'var(--accent)'}}/>
+                </div>
             </div>
-            <div className={styles.hseparator} />    
+            <div className={styles.hseparator}/>    
         </div>
     );
 };

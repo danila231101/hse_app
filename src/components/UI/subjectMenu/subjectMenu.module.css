@@ -1,6 +1,7 @@
-.menu {
+.menuWide {
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
     align-items: flex-start;
     padding: 16px;
     width: 100%;
@@ -8,6 +9,19 @@
     background-color: var(--bgAccent);
     min-width: max-content;
     max-width: 296px;
+}
+
+.menuNarrow {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    background-color: var(--bgAccent);
+    padding: 16px;
+    border-radius: 12px;
 }
 
 .item {
@@ -19,6 +33,13 @@
     align-items: center;
     box-sizing: border-box;
     color: var(--secondary);
+    /* min-width: 50%; */
+    flex-grow: 1;
+
+    /* order: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    align-self: flex-start; */
 }
 
 .item:hover {

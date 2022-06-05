@@ -1,24 +1,24 @@
 import React from 'react';
-import './assignmentEvent.css';
+import styles from './assignmentUnit.module.css';
 
-const AssignmentEvent = () => {
+const AssignmentUnit = () => {
     return (
-        <div className='event__content'>
-            <div className='content__indicator'></div>
-            <div className='content__right'>
-                <h5 className='subject'>
+        <div className={styles.assignment}>
+            <div className={styles.separator}></div>
+            <div className={styles.content}>
+                <h5 className={styles.subjectName}>
                     MACHINE LEARNING 1 (ENG)
                 </h5>
                 <h3>
                     HW 14: Venus and Mars
                 </h3>
-                <div className='rows'>
-                    <li className='beige'>
+                <div className={styles.rows}>
+                    <li className={styles.beige}>
                         <h4>
                             Till 23:59
                         </h4>
                     </li>
-                    <li className='beige'>
+                    <li className={styles.beige}>
                         <h4>
                             Submitted at 00:00
                         </h4>
@@ -29,4 +29,4 @@ const AssignmentEvent = () => {
     );
 };
 
-export default AssignmentEvent;
+export default AssignmentUnit;

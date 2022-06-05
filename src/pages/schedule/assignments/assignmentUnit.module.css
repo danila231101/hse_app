@@ -1,0 +1,42 @@
+.assignment {
+    display: grid;
+    grid-template-columns: max-content max-content 1fr;
+    grid-gap: 12px;
+
+    width: 100%;
+    height: max-content;
+}
+
+.separator {
+    height: 100%;
+    width: 2px;
+    background-color: var(--bgAccent);
+    border-radius: 1px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box;
+    gap: 8px;
+}
+
+.rows {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.beige {
+    padding: 4px 8px;
+    display: flex;
+    align-items: center;
+    background-color: var(--outlineStrong);
+    border-radius: 4px;
+    list-style: none;
+}
+
+.subject {
+    color: var(--accent);
+}

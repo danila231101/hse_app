@@ -1,112 +1,131 @@
 .sideBarWide {
-    height: 100vh;
-    /* max-height: stretch ; */
-    /* overflow: hidden; */
-    width: 30vh;
-    background-color: var(--bgAccent);
-    padding: 16px 16px;
     display: flex;
     box-sizing: border-box;
     flex-direction: column;
-    justify-content: space-between;
-    margin: 0;
+    gap: 24px;
+    
+    width: 30vh;
+
+    background-color: var(--bgAccent);
+    padding: 16px 16px;
 }
 
 .sideBarNarrow {
-    height: 100vh;
-    /* max-height: stretch ; */
-    /* overflow: hidden; */
-    width: auto;
-    background-color: var(--bgAccent);
-    padding: 16px 16px;
     display: flex;
     box-sizing: border-box;
     flex-direction: column;
-    justify-content: space-between;
-    margin: 0;
+    gap: 24px;
+    
+    background-color: var(--bgAccent);
+    padding: 16px 16px;
+}
+
+.topSection {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+
+    padding: 12px 10px;
 }
 
 .middleSection {
+    display: flex;
+    box-sizing: border-box;
     flex-direction: column;
-    color: var(--secondary);
 }
 
 .bottomSection {
+    display: flex;
+    box-sizing: border-box;
     flex-direction: column;
-    color: var(--secondary);
+    margin-top: auto;
 }
 
-.blueButton {
+.defaultButton {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    gap: 16px;
+
     height: 48px;
     width: 100%;
-    box-sizing: border-box;
+
     text-decoration: none;
     color: var(--secondary);
+    border-radius: 8px;
+    padding: 0 16px;
+}
+
+.defaultButton:hover {
     background-color: var(--outlineStrong);
 }
 
-.blueButtonActive {
-    color: var(--accent);
-    background-color: var(--accentFiller);
+.defaultButtonActive {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    gap: 16px;
+
+    height: 48px;
+    width: 100%;
+
     text-decoration: none;
+    color: var(--accent);
+    border-radius: 8px;
+    padding: 0 16px;
+}
+
+.defaultButtonActive:hover {
+    background-color: var(--accentFiller);
 }
 
 .redButton {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    gap: 16px;
+
     height: 48px;
     width: 100%;
-    box-sizing: border-box;
+
     text-decoration: none;
     color: var(--warning);
-    background-color: var(--warningFiller);
-}
-
-.blueContainer { 
-    width: 100%;
-    height: 48px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     border-radius: 8px;
-    padding: 0px;
-    color: inherit;
-    gap: 16px;
+    padding: 0 16px;
 }
 
-.blueContainer:hover {
-    background-color: inherit;
+.redButton:hover {
+    background-color: var(--warningFiller);;
 }
 
-.redContainer { 
-    width: 100%;
-    height: 48px;
+.account {
     display: flex;
+    box-sizing: border-box;
     flex-direction: row;
-    align-items: center;
-    border-radius: 8px;
-    padding: 0px;
-    color: inherit;
-    gap: 16px;
+    gap: 12px;
+
+    width: 100%;
 }
 
-.redContainer:hover {
-    color: inherit;
-    background-color: inherit;
+.accountInfo {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
 }
 
-#icon {
-    width: 48px;
-    height: 48px;
-    display: grid;
-    place-items: center;
-    align-items: center;
-    color: inherit;
+.photo {
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    background-color: aqua;
 }
 
-#title {
-    flex: 70%;
-    text-decoration: none;
-    display: grid;
-    place-items: left;
-    align-items: center;
+.title {
     color: inherit;
 }

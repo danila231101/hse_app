@@ -1,19 +1,19 @@
 .scroll {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    overflow: scroll;
-    /* height: 100vh; */
-    height: 100vh;
-    width: 100%;
     box-sizing: border-box;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: scroll;
+    gap: 48px;
+
     padding: 4vw 4vw 8vw 4vw;
-    gap: 3.3vw;
+    margin-bottom: auto;
 }
 
 .info {
     display: flex;
     flex-direction: column;
+    height: 100%;
     gap: 24px;
 
 }
@@ -22,7 +22,7 @@
     height: 160px;
     width: 160px;
     border-radius: 50%;
-    /* background-color: aliceblue; */
+    pointer-events: none;
 }
 
 .button {
@@ -41,8 +41,9 @@
     color: var(--primary);
 }
 
-.contentMain {
+.infoSection {
     display: flex;
     flex-direction: column;
+    height: 100%;
     gap: 12px;
 }

@@ -1,6 +1,7 @@
 .selectors {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 16px;
 }
 
@@ -17,26 +18,17 @@
 }
 
 .option:hover, .option:focus, .option:active {
-    background: linear-gradient(#000000, #000000);
-    background-color: #000000 !important; /* for IE */
-    color: #ffed00 !important;
+    background: var(--bgAccent);
+    background-color: var(--accentFiller)!important;
+    color: var(--primary) !important;
 }
 
 .option:checked {
-    background: linear-gradient(#d6d6d6, #d6d6d6);
-    background-color: #d6d6d6 !important; /* for IE */
-    color: #000000 !important;
+    background: var(--bgAccent);
+    background-color: var(--accentFiller)!important;
+    color: var(--primary) !important;
 }
 
 .select:selection {
-    background-color: black;
-}
-
-.label:after {
-    content:'\25BC';
-    display:inline-block;
-    color:#000;
-    background-color:#fff;
-    margin-left:-17px;   /* remove the damn :after space */
-    pointer-events:none; /* let the click pass trough */
+    background-color: var(--primary);
 }

@@ -1,0 +1,48 @@
+.content{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    gap: 24px;
+
+    padding-left: 4vw;
+    padding-right: 6vw;
+    margin: 0px;
+}
+
+ .navbar {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    gap: 2vw;
+
+    width: 100%;
+
+    padding: 3.3vw 4vw;
+}
+
+.headline {
+    font-weight: var(--headline);
+    color: var(--secondary);
+    font-size: 28px;
+    box-sizing: content-box;
+    text-decoration: none;
+}
+
+.headline:hover, .headline:visited, .headline:link, .headline:active {
+    text-decoration: none;
+    color: var(--secondary);
+} 
+
+.headlineActive {
+    font-weight: var(--headline);
+    color: var(--primary);
+    font-size: 28px;
+    box-sizing: content-box;
+    text-decoration: none;
+}
+
+.headlineActive:hover, .headlineActive:visited, .headlineActive:link, .headlineActive:active {
+    text-decoration: none;
+    color: var(--primary);
+}

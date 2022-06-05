@@ -3,23 +3,27 @@ import Options from '../../components/UI/options/Options';
 import SubjectMenu from '../../components/UI/subjectMenu/SubjectMenu';
 import Table from '../../components/UI/table/Table';
 import styles from './grades.module.css';
+import useWindowSize from '../../hooks/useWindowSize';
 
 const Grades = () => {
+    const width = useWindowSize().width
+
     return (
-        <div className={styles.page}>
+        <>
             <nav className={styles.navbar}>
                 <h1>Grades</h1>
             </nav>
-            <div className={styles.scroll}>
-                <div className={styles.content}>
+            <div className={styles.content}>
+                <div className={styles.scroll}>
                     <Options />
                     <Table />
                 </div>
+                {/* {width > 800 ? 
                 <div className={styles.rightMenu}>
                     <SubjectMenu />
-                </div>
+                </div> : null} */}
             </div>
-        </div>
+        </>
     );
 };
 

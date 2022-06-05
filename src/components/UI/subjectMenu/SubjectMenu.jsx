@@ -1,9 +1,12 @@
 import React from 'react';
 import styles from './subjectMenu.module.css';
+import useWindowSize from '../../../hooks/useWindowSize';
 
 const SubjectMenu = () => {
+    const width = useWindowSize().width
+
     return (
-        <div className={styles.menu}>
+        <div className={width > 1024 ? styles.menuWide : styles.menuNarrow}>
             <div className={styles.item}> 
                 Linear Algebra 
             </div>

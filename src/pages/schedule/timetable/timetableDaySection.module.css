@@ -1,0 +1,10 @@
+.daySection {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    gap: 24px;
+}
+
+.date {
+    color: var(--secondary);
+}

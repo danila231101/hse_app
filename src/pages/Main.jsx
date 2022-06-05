@@ -7,9 +7,9 @@ const Main = () => {
     return (
         <div className={styles.page}>
             <Sidebar />
-            <main className={styles.main}>
+            <div className={styles.main}>
                 <Outlet />
-            </main>
+            </div>
         </div>
     );
 }

@@ -1,11 +1,11 @@
 import React from 'react';
 import TimetableEvent from './TimetableEvent';
-import './timetableDailySection.css';
+import styles from './timetableDaySection.module.css';
 
-const TimetableDailySection = () => {
+const TimetableDaySection = () => {
     return (
-        <div className='day__section'>
-            <h3 className='date'>
+        <div className={styles.daySection}>
+            <h3 className={styles.date}>
                 MONDAY, JANUARY 10
             </h3>
             <TimetableEvent />
@@ -16,4 +16,4 @@ const TimetableDailySection = () => {
     );
 };
 
-export default TimetableDailySection;
+export default TimetableDaySection;
