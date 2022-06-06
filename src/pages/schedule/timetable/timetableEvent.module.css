@@ -27,7 +27,8 @@
 
 .contentSeparator {
     height: 100%;
-    border: 1px solid var(--bgAccent);
+    width: 2px;
+    background-color: var(--bgAccent);
     border-radius: 1px;
     flex-direction: column;
 }

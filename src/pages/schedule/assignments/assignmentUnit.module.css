@@ -12,6 +12,7 @@
     width: 2px;
     background-color: var(--bgAccent);
     border-radius: 1px;
+    flex-direction: column;
 }
 
 .content {
