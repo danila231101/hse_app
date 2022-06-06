@@ -9,7 +9,7 @@
 }
 
 .separator {
-    height: 100%;
+    height: auto;
     width: 2px;
     background-color: blue;
     /* background-color: var(--bgAccent); */
