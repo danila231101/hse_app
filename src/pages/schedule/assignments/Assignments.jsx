@@ -10,7 +10,7 @@ const Assignments = () => {
 
     return (
         <>
-            <div className={styles.scroll}>
+            <div className={styles.content}>
                 <AssignmentDaySection />
                 <AssignmentDaySection />
                 <AssignmentDaySection />

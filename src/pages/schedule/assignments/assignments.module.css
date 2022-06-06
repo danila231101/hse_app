@@ -1,7 +1,12 @@
 .content {
     display: flex;
     flex-direction: column;
-    gap: 48px;
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    gap: 24px;
+    height: max-content;
+    padding-bottom: 8vw;
 }
 
 .scroll {
@@ -23,6 +28,8 @@
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
+    position: sticky;
+    top: 0;
 }
 
 .calendar {

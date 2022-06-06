@@ -5,9 +5,11 @@ import styles from './timetableDaySection.module.css';
 const TimetableDaySection = () => {
     return (
         <div className={styles.daySection}>
-            <h3 className={styles.date}>
-                MONDAY, JANUARY 10
-            </h3>
+            <div className={styles.date}>
+                <h3 className={styles.dateText}>
+                    MONDAY, JANUARY 10
+                </h3>
+            </div>
             <TimetableEvent />
             <TimetableEvent />
             <TimetableEvent />

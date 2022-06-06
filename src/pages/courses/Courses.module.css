@@ -27,7 +27,7 @@
     width: 100%;
     
     overflow: scroll;
-    padding: 0 4vw;
+    padding: 0 4vw 6vw 4vw;
     
     gap: 24px;
     box-sizing: border-box;

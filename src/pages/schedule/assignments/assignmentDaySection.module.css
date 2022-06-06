@@ -3,8 +3,25 @@
     flex-direction: column;
     box-sizing: border-box;
     gap: 24px;
+    /* padding-top: 48px; */
 }
 
 .date {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
     color: var(--secondary);
+    justify-items: center;
+    width: 100%;
+    background-color: var(--bgDefault);
+    position: sticky;
+    padding: 4px 0;
+    top:0;
+}
+
+.dateText {
+    height: auto;
+    text-align: center;
+    justify-items: center;
+    color: inherit;
 }
