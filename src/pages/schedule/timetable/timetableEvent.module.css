@@ -26,7 +26,7 @@
 }
 
 .contentSeparator {
-    height: 100%;
+    height: auto;
     width: 2px;
     background-color: var(--bgAccent);
     border-radius: 1px;

@@ -2,7 +2,6 @@
     display: grid;
     grid-template-columns: max-content max-content 1fr;
     grid-gap: 12px;
-    background-color: azure;
 
     width: 100%;
     height: max-content;
@@ -11,8 +10,7 @@
 .separator {
     height: auto;
     width: 2px;
-    background-color: blue;
-    /* background-color: var(--bgAccent); */
+    background-color: var(--bgAccent);
     border-radius: 1px;
     flex-direction: column;
     box-sizing: border-box;

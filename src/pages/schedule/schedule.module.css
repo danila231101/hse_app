@@ -8,7 +8,9 @@
     width: 100%;
     
     overflow: scroll;
-    padding: 0 4vw;
+    padding-right: 4vw;
+    padding-left: 4vw;
+    margin: 0;
     
     gap: 24px;
     box-sizing: border-box;
