@@ -1,0 +1,55 @@
+.segmentedControl {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    margin-top: 20px;
+    width: 100%;
+    background-color: transparent;
+}
+
+.buttonActive {
+    width: calc(100%/3);
+    height: 48px;
+    background-color: var(--accentFiller);
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 16px;
+    border-radius: 8px;
+    
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--accent);
+    transition: .2s ease-in-out 0s
+}
+
+.buttonActive:hover {
+    color:  var(--accent);
+    background-color: var(--accentFiller);
+    cursor: pointer;
+}
+
+.buttonInactive {
+    width: calc(100%/3);
+    height: 48px;
+    background-color: transparent;
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 16px;
+    border-radius: 8px;
+    
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--primary);
+    transition: .2s ease-in-out 0s
+}
+
+.buttonInactive:hover {
+    background-color: var(--outlineStrong);
+    cursor: pointer;
+}

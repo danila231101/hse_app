@@ -1,3 +1,4 @@
+import React from 'react';
 import { ReactComponent as IconArrow } from '../../../assets/icons/arrow-right.svg';
 import { ReactComponent as IconAward } from '../../../assets/icons/award.svg';
 import { ReactComponent as IconCalendar } from '../../../assets/icons/calendar.svg';
@@ -14,7 +15,7 @@ export const SidebarUpperData = [
 export const SidebarMiddleData = [
     {
         title: 'Schedule',
-        path: 'schedule',
+        path: '/schedule',
         icon: <IconCalendar/>,
         cName: styles.defaultButton,
         cNameActive: styles.defaultButtonActive,

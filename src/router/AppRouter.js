@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
+import Account from '../pages/account/Account';
 import Courses from '../pages/courses/Courses';
 import Grades from '../pages/grades/Grades';
 import Login from '../pages/login/Login';
@@ -7,8 +8,6 @@ import Main from '../pages/Main';
 import Assignments from '../pages/schedule/assignments/Assignments';
 import Schedule from '../pages/schedule/Schedule';
 import Timetable from '../pages/schedule/timetable/Timetable';
-import Account from '../pages/account/Account';
-import Settings from '../pages/account/Account';
 
 const AppRouter = () => {
     return (
