@@ -1,4 +1,4 @@
-.scroll {
+.scrollWide {
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
@@ -8,9 +8,23 @@
     width: 100%;
     
     overflow: scroll;
-    padding-right: 4vw;
-    padding-left: 4vw;
-    margin: 0;
+    padding: 0 4vw 6vw 4vw;
+    
+    gap: 24px;
+    box-sizing: border-box;
+}
+
+.scrollNarrow {
+    display: flex;
+    flex-direction: column-reverse;
+    box-sizing: border-box;
+    overflow: scroll;
+
+    height: 90vh;
+    width: 100%;
+    
+    overflow: scroll;
+    padding: 0 4vw 6vw 4vw;
     
     gap: 24px;
     box-sizing: border-box;

@@ -8,8 +8,10 @@ import SegmentedControl from './SegmentedControl';
 
 const LogInForm = () => {
     const baseURL = "https://hse-backend-test.herokuapp.com/auth/login";
+    const baseURLget = "https://hse-backend-test.herokuapp.com/assignments/?page=1"
+    const headers = { 'Content-Type':'application/json'}
+    const [post, setPost] = useState(null);
 
-    const [post, setPost] = React.useState(null);
     const [role, setRole] = useState('STUDENT')
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -17,24 +19,19 @@ const LogInForm = () => {
     // const authContext = useContext(AuthContext);
     // const {publicAxios} = useContext(AxiosContext);
     const data = {
-        'email': email,
-        'password': password,
-        'role': role
+        'email': "gelik228@gmail.com",
+        'password': "32283228",
+        'role': "PROFESSOR"
     }
 
     const onLogin = async () => {
         createPost()
+
     };
 
     function createPost() {
-        axios
-        .post(baseURL, {
-            email: "gelik228@gmail.com",
-            password: "32283228",
-            role: "PROFESSOR",
-        }, {withCredentials: false})
-        .then((response) => {
-        console.log(response)
+        axios.post(baseURLget, data, headers).then((response) => {
+        console.log(response);
         });
     }
 
@@ -60,7 +57,8 @@ const LogInForm = () => {
             <button 
                 className='primaryButton'
                 // onClick={() => console.log(role, email, password)}
-                onClick={() => {onLogin()}}
+                // onClick={() => {onLogin()}}
+                onClick={window.location.pathname = '/schedule'}
             >
                 Log in
             </button>

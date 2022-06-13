@@ -17,7 +17,7 @@ const Schedule = () => {
                 </NavLink>
             </nav>
 
-            <div className={styles.scroll}>
+            <div className={width > 1024 ? styles.scrollWide : styles.scrollNarrow}>
                 <Outlet />
             </div>
         </>

@@ -24,16 +24,26 @@
     box-sizing: border-box;
 }
 
-.rightMenu {
+.rightMenuWide {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    position: sticky;
-    top: 0;
+    /* position: sticky; */
+    /* top: 0; */
+    gap: 24px;
+}
+
+.rightMenuNarrow {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    /* position: sticky; */
+    /* top: 0; */
 }
 
 .calendar {
     background-color: var(--bgAccent);
+
     border-radius: 12px;
     border: none;
     padding: 16px;
