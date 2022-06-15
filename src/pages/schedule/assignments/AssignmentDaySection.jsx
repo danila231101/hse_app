@@ -2,7 +2,7 @@ import React from 'react';
 import AssignmentUnit from './AssignmentUnit';
 import styles from './assignmentDaySection.module.css';
 
-const AssignmentDailySection = ({date, assignments, setModal}) => {
+const AssignmentDailySection = ({date, assignments}) => {
     return (
         <div className={styles.daySection}>
             <div className={styles.date}>
@@ -17,7 +17,6 @@ const AssignmentDailySection = ({date, assignments, setModal}) => {
                     name={assignment.assignmentName}
                     deadlineTime={assignment.deadlineTime}
                     submissionTime={assignment.submissionTime}
-                    setModal={setModal}
                 />
             )}
         </div>

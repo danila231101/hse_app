@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
 import styles from './schedule.module.css';
 import useWindowSize from '../../hooks/useWindowSize';
+import { useEffect } from 'react/cjs/react.development';
 
 const Schedule = () => {
     const width = useWindowSize().width

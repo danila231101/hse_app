@@ -1,15 +1,12 @@
-import React from 'react';
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
 import { Calendar } from 'react-calendar';
+import 'react-calendar/dist/Calendar.css';
+import OptionMenu from '../../../components/UI/optionMenu/OptionMenu';
+import useWindowSize from '../../../hooks/useWindowSize';
+import { dateMonthHandler } from '../../../utils/dateHandler';
 import AssignmentDaySection from './AssignmentDaySection';
 import styles from './assignments.module.css';
-import 'react-calendar/dist/Calendar.css';
-import useWindowSize from '../../../hooks/useWindowSize';
-import { useEffect } from 'react';
-import axios from 'axios';
-import { useState } from 'react';
-import { dateMonthHandler } from '../../../utils/dateHandler';
-import OptionMenu from '../../../components/UI/optionMenu/OptionMenu';
-import Modal from '../../../components/modal/Modal';
 
 const Assignments = () => {
     const width = useWindowSize().width
@@ -19,43 +16,14 @@ const Assignments = () => {
     const baseURLget = "https://hse-backend-test.herokuapp.com/assignments/?page=1"
 
     async function fetchAssignments() {
-        // const response = await axios.get(baseURLget)
-        // setAssignmentJSON(response.data);
-        // console.log(response.data)
-        setAssignmentJSON({ 'pageNum':0, 
-                            'assignments':
-                                {
-                                    '2022-06-10T16:30:00.000Z':[
-                                        {
-                                            'id':1,
-                                            'deadlineType':'hw',
-                                            'courseName':'Discrete Math',
-                                            'assignmentName':'Venus and Pinus',
-                                            'deadlineTime':'2022-06-10T16:30:00.000Z',
-                                            'submissionTime':'2022-06-10T16:30:00.000Z',
-
-                                        },
-                                        {
-                                            'id':1,
-                                            'deadlineType':'hw',
-                                            'courseName':'Discrete Math',
-                                            'assignmentName':'Venus and Pinus',
-                                            'deadlineTime':'2022-06-10T16:30:00.000Z',
-                                            'submissionTime':'2022-06-10T16:30:00.000Z',
-
-                                        }
-                                    ]
-                                }
-                            })
+        const response = await axios.get(baseURLget)
+        setAssignmentJSON(response.data);
     }
 
     useEffect(() => {fetchAssignments()}, [])
 
     return (
         <>
-            {/* <Modal visible={modal} setVisible={setModal}>
-                <h1>hello</h1>
-            </Modal> */}
             <div className={styles.content}>
                 {Object.keys(assignmentJSON.assignments).map((key) => 
                     <AssignmentDaySection

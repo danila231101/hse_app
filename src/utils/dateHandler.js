@@ -18,3 +18,14 @@ export function dateTimeHandler(dateString) {
     const formattedString = `${hours}:${minutes}`
     return formattedString
 }
+
+export function dateDateHandler(dateString) {
+    const date = new Date(dateString)
+
+    var day = date.getDate();
+    var month = date.getMonth(); 
+    var year = date.getFullYear();
+
+    const formattedString = `${day}.0${month+1}.${year}`
+    return formattedString
+}

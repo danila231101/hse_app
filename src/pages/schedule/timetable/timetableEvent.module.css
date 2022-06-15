@@ -7,6 +7,10 @@
     height: max-content;
 }
 
+.event:hover {
+    cursor: pointer;
+}
+
 .contentLeft {
     display: flex;
     flex-direction: column;

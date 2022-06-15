@@ -1,12 +1,12 @@
 import React from 'react';
-import { dateTimeHandler } from '../../../utils/dateHandler';
+import { dateTimeHandler, dateDateHandler } from '../../../utils/dateHandler';
 import styles from './assignmentUnit.module.css';
 import { useState } from 'react';
 import Modal from '../../../components/modal/Modal';
 import TeacherUnit from '../../../components/UI/teacher/TeacherUnit';
 
 const AssignmentUnit = ({subject, name, deadlineTime, submissionTime}) => {
-    const [modal, setModal] = useState(0)
+    const [modal, setModal] = useState(false)
 
     const userReference = {
         'id':1,
@@ -63,7 +63,7 @@ const AssignmentUnit = ({subject, name, deadlineTime, submissionTime}) => {
                     <h3>Publication</h3>
                     <div className={styles.timeSection}>
                         <h3 className={styles.secondaryText}>{dateTimeHandler(detailedInfo.createdAt)}</h3>
-                        <h3 className={styles.secondaryText}>{detailedInfo.createdAt}</h3>
+                        <h3 className={styles.secondaryText}>{dateDateHandler(detailedInfo.createdAt)}</h3>
                     </div>
                 </div>
 
@@ -71,7 +71,7 @@ const AssignmentUnit = ({subject, name, deadlineTime, submissionTime}) => {
                     <h3>Deadline</h3>
                     <div className={styles.timeSection}>
                         <h3 className={styles.secondaryText}>{dateTimeHandler(detailedInfo.createdAt)}</h3>
-                        <h3 className={styles.secondaryText}>{detailedInfo.createdAt}</h3>
+                        <h3 className={styles.secondaryText}>{dateDateHandler(detailedInfo.createdAt)}</h3>
                     </div>
                 </div>
 
@@ -123,13 +123,22 @@ const AssignmentUnit = ({subject, name, deadlineTime, submissionTime}) => {
                             )
                         })
                     }
+
+                </div>
+
+                <div className={styles.section}>
+                    <div className={styles.submitButton} onClick={() => setModal(false)}>
+                    <h3 className={styles.onPrimaryText}>
+                        Submit work
+                    </h3>
+                    </div>
                 </div>
             </Modal>
 
             <div className={styles.separator}></div>
             <div className={styles.content}>
                 <h5 className={styles.subjectName}>
-                    {subject}
+                    {subject.toUpperCase()}
                 </h5>
                 <h3>
                     {name}
@@ -143,7 +152,7 @@ const AssignmentUnit = ({subject, name, deadlineTime, submissionTime}) => {
                     <li className={styles.beige}>
                         {submissionTime == null 
                         ? <h4>Not submitted</h4>
-                        : <h4>Submitted at {submissionTime}</h4>}
+                        : <h4>Submitted at {dateTimeHandler(submissionTime)}</h4>}
                     </li>
                 </div>
             </div>

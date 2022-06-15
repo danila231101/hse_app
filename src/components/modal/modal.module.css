@@ -5,7 +5,6 @@
     right: 0;
     bottom: 0;
     display: none;
-    background-color: var(--secondary);
 }
 
 .modalActive {
@@ -14,11 +13,12 @@
     left: 0;
     right: 0;
     bottom: 0;
-    display: none;
-    background-color: var(--secondary);
+    background: var(--secondary);
+
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .content {
@@ -27,9 +27,7 @@
     box-sizing: border-box;
     overflow: scroll;
     gap: 24px;
-
-     -ms-overflow-style: none;
-    scrollbar-width: none;
+    cursor:auto;
 
     /* margin-top: 30vh; */
     width: 80vw;
@@ -40,4 +38,5 @@
     padding: 4vw;
     background-color: var(--bgDefault) ;
     border-radius: 12px;
+    transition: all .3s ease-in-out;
 }

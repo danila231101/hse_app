@@ -58,7 +58,7 @@ const LogInForm = () => {
                 className='primaryButton'
                 // onClick={() => console.log(role, email, password)}
                 // onClick={() => {onLogin()}}
-                onClick={window.location.pathname = '/schedule'}
+                onClick={() => window.location.pathname = '/schedule'}
             >
                 Log in
             </button>
