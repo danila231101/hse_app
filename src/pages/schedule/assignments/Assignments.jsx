@@ -1,8 +1,8 @@
-import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Calendar } from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import OptionMenu from '../../../components/UI/optionMenu/OptionMenu';
+import { AssignmentData } from '../../../data/AssignmentJSON';
 import useWindowSize from '../../../hooks/useWindowSize';
 import { dateMonthHandler } from '../../../utils/dateHandler';
 import AssignmentDaySection from './AssignmentDaySection';
@@ -12,12 +12,13 @@ const Assignments = () => {
     const width = useWindowSize().width
     const [option, setOption] = useState(0)
 
-    const [assignmentJSON, setAssignmentJSON] = useState({'pageNum':0, 'assignments':{}}) 
-    const baseURLget = "https://hse-backend-test.herokuapp.com/assignments/?page=1"
+    const [assignmentJSON, setAssignmentJSON] = useState({'pageNum':0, 'assignments':[]}) 
+    // const baseURLget = "https://my-json-server.typicode.com/SKYMAN44/FAKEJSONSERVER/timetable/1/deadlines"
 
     async function fetchAssignments() {
-        const response = await axios.get(baseURLget)
-        setAssignmentJSON(response.data);
+        // const response = await axios.get(baseURLget)
+        // setAssignmentJSON(response.data);
+        setAssignmentJSON(AssignmentData)
     }
 
     useEffect(() => {fetchAssignments()}, [])

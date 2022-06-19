@@ -12,11 +12,11 @@ const ChatSection = ({title, chatList}) => {
                 {chatList.map((value) => {
                         return (
                             <ChatUnit
-                                photo={require(value.photo)}
+                                photo={value.photo}
                                 title={value.title}
                                 lastSender={value.lastSender}
                                 messageText={value.messageText}
-                                messageTime='· 9 min'
+                                messageTime={value.messageTime}
                                 messageCounter={value.messageCounter}
                             />
                         )

@@ -5,10 +5,10 @@ import styles from './login.module.css';
 const Login = () => {
     return (
         <>
-            {/* <div className={styles.loginPage}>
+            <div className={styles.loginPage}>
                 <LoginForm/>
-            </div> */}
-            <LoginForm />
+            </div>
+            {/* <LoginForm /> */}
         </>
     );
 };

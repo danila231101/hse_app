@@ -1,17 +1,17 @@
 import React from 'react';
 import styles from './teacherUnit.module.css';
 
-const TeacherUnit = (props) => {
+const TeacherUnit = ({photo, name, surname, role, group}) => {
     return (
         <div className={styles.cell}>
-            <img src={props.teacherPhoto} alt="TP" className={styles.photo}/>
+            <img src={photo} alt="" className={styles.photo}/>
             <div className={styles.info}>
-                <h3>{props.teacherName} {props.teacherSurname}</h3>
-                {props.teacherGroup === null 
+                <h3>{name} {surname}</h3>
+                {group !== null 
                     ?
-                    <h5>{props.teacherRole} · {props.teacherGroup}</h5>
+                    <h5>{role} · {group}</h5>
                     :
-                    <h5>{props.teacherRole}</h5>
+                    <h5>{role}</h5>
                 }
             </div>
         </div>

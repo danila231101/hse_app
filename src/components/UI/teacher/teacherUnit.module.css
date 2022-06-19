@@ -11,12 +11,13 @@
 
     order: 5;
     flex-grow: 1;
-    flex-shrink: 1;
+    flex-shrink: 2;
     align-self: flex-start;
 }
 
 .cell:hover {
     background-color: var(--outlineLight);
+    cursor: pointer;
 }
 
 .photo {

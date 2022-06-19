@@ -2,7 +2,7 @@ import React, { useState, useContext } from 'react';
 import axios from 'axios';
 // import { AuthContext } from '../../../API/AuthContext';
 // import { AxiosContext } from '../../../API/AxiosProvider';
-import './loginForm.css';
+import styles from './loginForm.module.css';
 import SegmentedControl from './SegmentedControl';
 
 
@@ -36,33 +36,33 @@ const LogInForm = () => {
     }
 
     return (
-        <div className='loginCard'>
-            <text className='header'>HSE Connect</text>
+        <div className={styles.loginCard}>
+            <text className={styles.header}>HSE Connect</text>
 
             <SegmentedControl role={role} setNewRole={setRole} />
             <input 
-                className='emailInput'
+                className={styles.emailInput}
                 type='email' 
                 name='email' 
                 placeholder='Email'
                 onChange={(e) => setEmail(e.target.value)}
             />
             <input 
-                className='emailInput'
+                className={styles.emailInput}
                 type='password'
                 name='password'
                 placeholder='Password'
                 onChange={(e) => setPassword(e.target.value)}
             />
-            <button 
-                className='primaryButton'
+            <div 
+                className={styles.primaryButton}
                 // onClick={() => console.log(role, email, password)}
                 // onClick={() => {onLogin()}}
                 onClick={() => window.location.pathname = '/schedule'}
             >
                 Log in
-            </button>
-            <button className='tertiaryButton'>Can't log in</button>
+            </div>
+            <div className={styles.tertiaryButton}>Can't log in</div>
         </div>
     );
 };

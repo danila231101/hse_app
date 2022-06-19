@@ -1,7 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import useWindowSize from '../../../hooks/useWindowSize';
-import { AccountInfo } from '../../../pages/account/AccountData';
 import styles from './sidebar.module.css';
 import { SidebarBottomData, SidebarMiddleData } from './SidebarData';
 

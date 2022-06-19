@@ -5,16 +5,8 @@ import { useState } from 'react';
 import Modal from '../../../components/modal/Modal';
 import TeacherUnit from '../../../components/UI/teacher/TeacherUnit';
 
-const AssignmentUnit = ({subject, name, deadlineTime, submissionTime}) => {
+export const AssignmentUnit = ({courseName, assignmentName, deadlineTime, submissionTime}) => {
     const [modal, setModal] = useState(false)
-
-    const userReference = {
-        'id':1,
-        'role':'Seminarist',
-        'name':'Nikita',
-        'surname':'Medved',
-        'picture':''
-    }
 
     const detailedInfo = {
         'id':'1',
@@ -137,11 +129,11 @@ const AssignmentUnit = ({subject, name, deadlineTime, submissionTime}) => {
 
             <div className={styles.separator}></div>
             <div className={styles.content}>
-                <h5 className={styles.subjectName}>
-                    {subject.toUpperCase()}
+                <h5 className={styles.subjectText}>
+                    {courseName}
                 </h5>
                 <h3>
-                    {name}
+                    {assignmentName}
                 </h3>
                 <div className={styles.rows}>
                     <li className={styles.beige}>

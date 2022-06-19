@@ -9,7 +9,7 @@ const DescriptionSection = (props) => {
             </div>
 
             <div>
-                <h4 style={{color:'var(--secondary)'}}>{props.description}</h4>
+                <h4 style={{color:'var(--secondary)', whiteSpace: "pre-wrap"}}>{props.description}</h4>
             </div>
         </div>
     );

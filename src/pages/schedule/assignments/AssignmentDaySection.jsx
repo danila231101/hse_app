@@ -1,6 +1,7 @@
 import React from 'react';
-import AssignmentUnit from './AssignmentUnit';
 import styles from './assignmentDaySection.module.css';
+import { AssignmentUnit } from './AssignmentUnit';
+
 
 const AssignmentDailySection = ({date, assignments}) => {
     return (
@@ -10,15 +11,17 @@ const AssignmentDailySection = ({date, assignments}) => {
                     {date}
                 </h3>
             </div>
-            {assignments.map((assignment, key) =>
-                <AssignmentUnit 
-                    key={key}
-                    subject={assignment.courseName} 
-                    name={assignment.assignmentName}
-                    deadlineTime={assignment.deadlineTime}
-                    submissionTime={assignment.submissionTime}
-                />
-            )}
+            {console.log(assignments)}
+            {Object.values(assignments).map((assignment) => {
+                return (
+                    <AssignmentUnit
+                        courseName={assignment.courseName}
+                        assignmentName={assignment.assignmentName}
+                        deadlineTime={assignment.deadlineTime}
+                        submissionTime={assignment.submissionTime}
+                    />
+                )
+            })}
         </div>
     );
 };
